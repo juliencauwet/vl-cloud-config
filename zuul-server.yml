@@ -1,0 +1,38 @@
+server:
+    port: 8652
+spring:
+    application:
+        name: zuul-server
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8651/eureka/
+
+#a adapter
+zuul:
+    routes:
+        login:
+            path: /login/**
+            sensitiveHeaders:
+            serviceId: auth-server
+        account:
+            path: /account/**
+            sensitiveHeaders:
+            serviceId: account-service
+
+
+#a adapter
+security:
+    user:
+        name: root
+        password: password
+    oauth2:
+        client:
+            accessTokenUri: http://localhost:8765/login/oauth/token
+            userAuthorizationUri: http://localhost:8765/login/oauth/authorize
+            clientAuthenticationScheme: form
+        resource:
+            userInfoUri: http://localhost:8765/uaa/user
+            preferTokenInfo: false
+    sessions: ALWAYS
