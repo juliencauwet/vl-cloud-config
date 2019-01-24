@@ -12,14 +12,11 @@ eureka:
 #a adapter
 zuul:
     routes:
-        users:
-            path: /ms-users/**
-            sensitiveHeaders:
-            serviceId: ms-users
-        topics:
-            path: /topics/**
-            sensitiveHeaders:
-            serviceId: ms-topics
+        ms-users:
+            url: http://localhost:8640/ms-users/
+        ms-topics:
+            url: http://localhost:8641/ms-topics/
+
 
 
 #a adapter
