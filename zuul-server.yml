@@ -12,14 +12,14 @@ eureka:
 #a adapter
 zuul:
     routes:
-        login:
-            path: /login/**
+        users:
+            path: /ms-users/**
             sensitiveHeaders:
-            serviceId: auth-server
-        account:
-            path: /account/**
+            serviceId: ms-users
+        topics:
+            path: /topics/**
             sensitiveHeaders:
-            serviceId: account-service
+            serviceId: ms-topics
 
 
 #a adapter
