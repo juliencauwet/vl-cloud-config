@@ -8,6 +8,8 @@ eureka:
       defaultZone: http://localhost:8651/eureka/
 
 spring:
+  application:
+    name: ms-client
   main:
     allow-bean-definition-overriding: true
 
