@@ -1,0 +1,16 @@
+server:
+  port: 8649
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8651/eureka/
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+#Nos configurations
+test-config:
+  test: 3
