@@ -16,7 +16,5 @@ zuul:
   routes:
     ms-users:
       url: http://localhost:8640/
-        #ms-users/
     ms-topics:
       url: http://localhost:8641/
-        #ms-topics/
