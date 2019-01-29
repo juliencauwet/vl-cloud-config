@@ -8,7 +8,7 @@ spring:
     config:
       overrideNone: true
       overrideSystemProperties: false
-    jpa:
+  jpa:
       show-sql: true
       hibernate:
         ddl-auto: validate
@@ -17,8 +17,8 @@ spring:
           format_sql: true
           temp:
             use_jdbc_metadata_defaults: false
-    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
-    datasource:
+  database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+  datasource:
       url: jdbc:postgresql://localhost:8740/db_VL-auth
       username: usr_auth
       password: auth
@@ -34,4 +34,5 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8651/eureka/
 
-test-config.test: 5
+test-config:
+  test: 5
