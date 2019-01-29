@@ -5,7 +5,7 @@ spring:
   application:
     name: vl-eureka-server
   main:
-      allow-bean-definition-overriding=true:
+      allow-bean-definition-overriding: true
 
 eureka:
   client:
