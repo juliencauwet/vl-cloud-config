@@ -22,12 +22,13 @@ spring:
       url: jdbc:postgresql://localhost:8740/db_VL-auth
       username: usr_auth
       password: auth
-
+  main:
+    allow-bean-definition-overriding: true
 #Configurations H2
 #springjpa.show-sql=true
 #spring.h2.console.enabled=true
 #
-#spring.main.allow-bean-definition-overriding=true
+#spring.
 
 eureka:
   client:
