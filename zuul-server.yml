@@ -1,3 +1,27 @@
+#server:
+#  port: 8652
+#
+#spring:
+#  application:
+#    name: zuul-server
+#  main:
+#    allow-bean-definition-overriding: true
+#  security:
+#    user:
+#      name: julien
+#      password: 1947147
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8651/eureka/
+#
+#zuul:
+#  routes:
+#    ms-users:
+#      url: http://localhost:8640/
+#    ms-topics:
+#      url: http://localhost:8641/
 server:
   port: 8652
 
@@ -6,12 +30,6 @@ spring:
     name: zuul-server
   main:
     allow-bean-definition-overriding: true
-  security:
-    user:
-      name: julien
-      password: 1947147
-
-
 
 eureka:
   client:
@@ -21,6 +39,26 @@ eureka:
 zuul:
   routes:
     ms-users:
+      path: /ms-users/**
       url: http://localhost:8640/
+      sensitiveHeaders: Cookie,Set-Cookie
+      stripPrefix: false
     ms-topics:
       url: http://localhost:8641/
+      path: /ms-topics/**
+
+shuaicj.security.jwt.secret: otherpeopledontknowit
+
+
+      #zuul:
+        #  routes:
+        #    auth-center:
+        #      path: /login/**
+        #      url: http://127.0.0.1:2346/
+        #      sensitiveHeaders: Cookie,Set-Cookie
+        #      stripPrefix: false
+        #    backend-service:
+        #      path: /backend/**
+        #      url: http://127.0.0.1:2347/
+      #
+      #shuaicj.security.jwt.secret: otherpeopledontknowit
