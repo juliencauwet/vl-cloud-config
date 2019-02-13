@@ -8,8 +8,8 @@ spring:
     allow-bean-definition-overriding: true
   security:
     user:
-      name: utilisateur
-      password: mdp
+      name: julien
+      password: 1947147
 
 eureka:
   client:
