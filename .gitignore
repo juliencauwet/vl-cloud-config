@@ -1,0 +1,58 @@
+_Store
+        
+       
+        
+        config-server
+        ../vyjorg/.DS_Store
+        ../vyjorg/LPDM/
+        ../vyjorg/LPDM2/.DS_Store
+        ../vyjorg/LPDM2/LPDM-Auth/
+        ../vyjorg/LPDM2/LPDM-CloudConfig/
+        ../vyjorg/LPDM2/LPDM-Eureka/
+        ../vyjorg/LPDM2/LPDM-Location/
+        ../vyjorg/LPDM2/LPDM-Order/
+        ../vyjorg/LPDM2/LPDM-Product/
+        ../vyjorg/LPDM2/LPDM-Stock/
+        ../vyjorg/LPDM2/LPDM-Storage/
+        ../vyjorg/LPDM2/LPDM-User/
+        ../vyjorg/LPDM2/demo/.gitignore
+        ../vyjorg/LPDM2/demo/.mvn/
+        ../vyjorg/LPDM2/demo/mvnw
+        ../vyjorg/LPDM2/demo/mvnw.cmd
+        ../vyjorg/LPDM2/demo/pom.xml
+        ../vyjorg/LPDM2/demo/src/main/java/com/fordemo/demo/DemoApplication.java
+        ../vyjorg/LPDM2/demo/src/main/java/com/fordemo/demo/model/
+        ../vyjorg/LPDM2/demo/src/main/resources/
+        ../vyjorg/LPDM2/demo/src/test/
+        ../vyjorg/marketplace/
+        ../webService/
+.idea
+# Created by .ignore support plugin (hsz.mobi)
+### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.idea
+
+/target
