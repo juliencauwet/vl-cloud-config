@@ -39,7 +39,7 @@ eureka:
 zuul:
   routes:
     ms-users:
-      path: /ms-users/**
+      path: /login/**
       url: http://localhost:8640/
       sensitiveHeaders: Cookie,Set-Cookie
       stripPrefix: false
