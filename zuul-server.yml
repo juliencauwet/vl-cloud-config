@@ -11,6 +11,8 @@ spring:
       name: julien
       password: 1947147
 
+
+
 eureka:
   client:
     serviceUrl:
