@@ -6,6 +6,10 @@ spring:
     name: zuul-server
   main:
     allow-bean-definition-overriding: true
+  security:
+    user:
+      name: utilisateur
+      password: mdp
 
 eureka:
   client:
