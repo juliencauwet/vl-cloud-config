@@ -1,0 +1,39 @@
+server:
+  port: 8640
+
+spring:
+  application:
+    name: ms-users
+  cloud:
+    config:
+      overrideNone: true
+      overrideSystemProperties: false
+  jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: validate
+      properties:
+        hibernate:
+          format_sql: true
+          temp:
+            use_jdbc_metadata_defaults: false
+  database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+  datasource:
+      url: jdbc:postgresql://localhost:8740/db_VL-auth
+      username: usr_auth
+      password: auth
+  main:
+    allow-bean-definition-overriding: true
+#Configurations H2
+#springjpa.show-sql=true
+#spring.h2.console.enabled=true
+#
+#spring.
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8651/eureka/
+
+test-config:
+  test: 5
