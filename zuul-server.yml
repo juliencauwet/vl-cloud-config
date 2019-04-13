@@ -45,7 +45,7 @@ eureka:
 zuul:
   routes:
     ms-users:
-      path: /ms-users/**
+      path: /login/**
       url: http://164.132.197.173:8640/
       sensitiveHeaders: Cookie,Set-Cookie
       stripPrefix: false
