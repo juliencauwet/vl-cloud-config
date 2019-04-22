@@ -66,6 +66,10 @@ zuul:
 jwt.security.jwt.secret: otherpeopledontknowit
 
 
+ms.passphrase.security: bidon
+ms.passphrase.key: security-passphrase
+
+
       #zuul:
         #  routes:
         #    auth-center:
