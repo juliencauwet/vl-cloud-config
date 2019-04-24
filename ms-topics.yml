@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: ms-topics
+  cloud:
+    config:
+      overrideNone: true
+      overrideSystemProperties: false
   jpa:
     show-sql: true
     hibernate:
@@ -21,14 +25,6 @@ spring:
     main:
       allow-bean-definition-overriding: true
 
-#Configurations H2
-  jpa:
-    show-sql: true
-  h2:
-    console:
-      enabled: true
-  main:
-    allow-bean-definition-overriding: true
 
 eureka:
   client:
