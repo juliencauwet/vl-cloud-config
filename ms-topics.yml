@@ -17,13 +17,13 @@ spring:
         format_sql: true
         temp:
           use_jdbc_metadata_defaults: false
-    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
-    datasource:
-      url: jdbc:postgresql://164.132.197.173:8741/db_VL-topics
-      username: usr_topics
-      password: topics
-    main:
-      allow-bean-definition-overriding: true
+  database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+  datasource:
+    url: jdbc:postgresql://164.132.197.173:8741/db_VL-topics
+    username: usr_topics
+    password: topics
+  main:
+    allow-bean-definition-overriding: true
 
 
 eureka:
