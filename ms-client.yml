@@ -22,3 +22,5 @@ spring:
 #Nos configurations
 test-config:
   test: 3
+
+zuul.server.name: zuul-server
