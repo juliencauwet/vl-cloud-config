@@ -44,15 +44,14 @@ eureka:
 
 zuul:
   routes:
-    ##ms-auth:
-    ##  path: /login/**
-    ##  ##url: http://164.132.197.173:8640/
-    ##  url: http://127.0.0.1:8640/
-    ##  sensitiveHeaders: Cookie,Set-Cookie
-    ##  stripPrefix: false
+    ms-auth:
+      path: /login/**
+      url: http://164.132.197.173:8653/
+      sensitiveHeaders: Cookie,Set-Cookie
+      stripPrefix: false
     ms-users:
-      path: /ms-users/**
       ##url: http://164.132.197.173:8640/
+      path: /ms-users/**
       url: http://127.0.0.1:8640/
       sensitiveHeaders: Cookie,Set-Cookie
       stripPrefix: false
@@ -80,17 +79,3 @@ jwt.security.jwt.secret: otherpeopledontknowit
 
 ms.passphrase.security: bidon
 ms.passphrase.key: security-passphrase
-
-
-      #zuul:
-        #  routes:
-        #    auth-center:
-        #      path: /login/**
-        #      url: http://127.0.0.1:2346/
-        #      sensitiveHeaders: Cookie,Set-Cookie
-        #      stripPrefix: false
-        #    backend-service:
-        #      path: /backend/**
-        #      url: http://127.0.0.1:2347/
-      #
-      #shuaicj.security.jwt.secret: otherpeopledontknowit
