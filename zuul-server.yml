@@ -44,18 +44,18 @@ eureka:
 
 zuul:
   routes:
-    ms-users:
-      path: /login/**
-      ##url: http://164.132.197.173:8640/
-      url: http://127.0.0.1:8640/
-      sensitiveHeaders: Cookie,Set-Cookie
-      stripPrefix: false
     ##ms-auth:
-    ##  path: /ms-users/**
+    ##  path: /login/**
     ##  ##url: http://164.132.197.173:8640/
     ##  url: http://127.0.0.1:8640/
     ##  sensitiveHeaders: Cookie,Set-Cookie
     ##  stripPrefix: false
+    ms-users:
+      path: /ms-users/**
+      ##url: http://164.132.197.173:8640/
+      url: http://127.0.0.1:8640/
+      sensitiveHeaders: Cookie,Set-Cookie
+      stripPrefix: false
     ms-topics:
       ##url: http://164.132.197.173:8641/
       url: http://127.0.0.1:8641/
