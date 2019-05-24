@@ -44,7 +44,7 @@ eureka:
 
 zuul:
   routes:
-    ms-auth:
+    auth-center:
       path: /login/**
       ##url: http://164.132.197.173:2344/
       url: http://localhost:2346/
