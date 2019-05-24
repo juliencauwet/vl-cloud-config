@@ -46,7 +46,8 @@ zuul:
   routes:
     ms-auth:
       path: /login/**
-      url: http://164.132.197.173:8653/
+      ##url: http://164.132.197.173:2344/
+      url: http://localhost:2344/
       sensitiveHeaders: Cookie,Set-Cookie
       stripPrefix: false
     ms-users:
