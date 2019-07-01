@@ -29,6 +29,14 @@ spring:
     username: julien.app.test@gmail.com
     password: julien4test!
     port: 587
+    properties:
+      mail:
+        smtp:
+          starttls:
+            auth: true
+            enable: true
+
+
 #Configurations H2
 #springjpa.show-sql=true
 #spring.h2.console.enabled=true
