@@ -46,9 +46,3 @@ test-config:
 ####
 shuaicj.security.jwt.secret: otherpeopledontknowit
 
-spring:
-  mail.host=smtp.gmail.com
-  spring.mail.username=julien.app.test@gmail.com
-  spring.mail.password=julien4test!
-  spring.mail.port=587
-
