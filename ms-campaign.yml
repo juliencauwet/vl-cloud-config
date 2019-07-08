@@ -19,8 +19,7 @@ spring:
           use_jdbc_metadata_defaults: false
   database-platform: org.hibernate.dialect.PostgreSQL94Dialect
   datasource:
-    url: jdbc:postgresql://localhost:8742/db_VL-campaign
-    #url: jdbc:postgresql://164.132.197.173:8741/db_VL-campaign
+    url: jdbc:postgresql://164.132.197.173:8741/db_VL-campaign
     username: usr_campaign
     password: campaign
   main:
